@@ -8,10 +8,12 @@ int main() {
     if(N<=0){
         cout<<"невозможно посчитать сумму чисел при n меньше или равном 0"<<endl;
     }
-    unsigned int result=0;
-    for(int i=0;i<N;i++){
-        result+=i;
+    else{
+        unsigned int result=0;
+        for(int i=0;i<=N;i++){
+            result+=i;
+        }
+        cout<<result<<endl;
     }
-    cout<<result<<endl;
     return 0;
 }
