@@ -4,7 +4,7 @@
 using namespace std;
 
 int main() {
-    double a,b,c,result;
+    double a,b,c;
     cout << "Введите коэффициенты для квадратного уравнения" << endl;
     cin >> a >> b >> c;
     double D = b * b - 4 * a * c;
