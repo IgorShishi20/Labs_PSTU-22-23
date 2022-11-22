@@ -12,6 +12,7 @@ int main() {
             if(a<prev){
                 increasing = false;
             }
+            prev = a;
             cin>>a;
         }while(a!=0);
     }
