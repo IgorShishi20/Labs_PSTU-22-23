@@ -9,7 +9,7 @@ int main() {
     big_letter=0;
     little_letter=0;
     std::string string;
-    std::cout<<"Ââåäèòå ñòğîêó"<<std::endl;
+    std::cout<<"Ã‚Ã¢Ã¥Ã¤Ã¨Ã²Ã¥ Ã±Ã²Ã°Ã®ÃªÃ³"<<std::endl;
     std::cin>>string;
     for(int i=0;i<string.size();i++){
         if(-65<(int)string[i] and (int)string[i]<-32){
@@ -19,7 +19,7 @@ int main() {
             *little_let +=1;
         }
     }
-    std::cout<<"Êîëè÷åñòâî çàãëàâíûõ áóêâ ğàâíî "<<*big_let<<std::endl;
-    std::cout<<"Êîëè÷åñòâî ñòğî÷íûõ áóêâ ğàâíî "<<*little_let<<std::endl;
+    std::cout<<"ÃŠÃ®Ã«Ã¨Ã·Ã¥Ã±Ã²Ã¢Ã® Ã§Ã Ã£Ã«Ã Ã¢Ã­Ã»Ãµ Ã¡Ã³ÃªÃ¢ Ã°Ã Ã¢Ã­Ã® "<<*big_let<<std::endl;
+    std::cout<<"ÃŠÃ®Ã«Ã¨Ã·Ã¥Ã±Ã²Ã¢Ã® Ã±Ã²Ã°Ã®Ã·Ã­Ã»Ãµ Ã¡Ã³ÃªÃ¢ Ã°Ã Ã¢Ã­Ã® "<<*little_let<<std::endl;
     return 0;
 }
