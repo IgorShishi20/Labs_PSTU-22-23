@@ -3,10 +3,10 @@
 int main() {
     int a;
     int *pointer;
-    std::cout<<"Ââåäèòå ÷èñëî"<<std::endl;
+    std::cout<<"Ã‚Ã¢Ã¥Ã¤Ã¨Ã²Ã¥ Ã·Ã¨Ã±Ã«Ã®"<<std::endl;
     std::cin>>a;
     pointer = &a;
     *pointer = a+10;
-    std::cout<<"Íîâîå ÷èñëî à+10 ğàâíî "<<*pointer<<std::endl;
+    std::cout<<"ÃÃ®Ã¢Ã®Ã¥ Ã·Ã¨Ã±Ã«Ã® Ã +10 Ã°Ã Ã¢Ã­Ã® "<<*pointer<<std::endl;
     return 0;
 }
