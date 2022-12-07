@@ -9,7 +9,7 @@ int main() {
     big_letter=0;
     little_letter=0;
     std::string string;
-    std::cout<<"Ââåäèòå ñòðîêó"<<std::endl;
+    std::cout<<"Введите строку"<<std::endl;
     std::cin>>string;
     for(int i=0;i<string.size();i++){
         if(-65<(int)string[i] and (int)string[i]<-32){
@@ -19,7 +19,8 @@ int main() {
             *little_let +=1;
         }
     }
-    std::cout<<"Êîëè÷åñòâî çàãëàâíûõ áóêâ ðàâíî "<<*big_let<<std::endl;
-    std::cout<<"Êîëè÷åñòâî ñòðî÷íûõ áóêâ ðàâíî "<<*little_let<<std::endl;
+    std::cout<<"Количество заглавных букв равно "<<*big_let<<std::endl;
+    std::cout<<"Количество строчных букв равно "<<*little_let<<std::endl;
     return 0;
 }
+
