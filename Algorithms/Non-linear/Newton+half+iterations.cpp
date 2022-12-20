@@ -53,9 +53,9 @@ double iterations(double a,double b){
 }
 
 int main() {
-    std::cout<<"Ðåçóëüòàò ðàáîòû"<<std::endl;
-    std::cout<<"Ìåòîä ïîëîâèííîãî äåëåíèÿ: êîðåíü ðàâåí "<<std::setprecision(10)<<half(0,1)<<std::endl;
-    std::cout<<"Ìåòîä Íüþòîíà: êîðåíü ðàâåí "<<std::setprecision(10)<<newton(0,1)<<std::endl;
-    std::cout<<"Ìåòîä èòåðàöèé: êîðåíü ðàâåí "<<std::setprecision(10)<<iterations(0,1)<<std::endl;
+    std::cout<<"ÃÃ¥Ã§Ã³Ã«Ã¼Ã²Ã Ã² Ã°Ã Ã¡Ã®Ã²Ã»"<<std::endl;
+    std::cout<<"ÃŒÃ¥Ã²Ã®Ã¤ Ã¯Ã®Ã«Ã®Ã¢Ã¨Ã­Ã­Ã®Ã£Ã® Ã¤Ã¥Ã«Ã¥Ã­Ã¨Ã¿: ÃªÃ®Ã°Ã¥Ã­Ã¼ Ã°Ã Ã¢Ã¥Ã­ "<<std::setprecision(10)<<half(0,1)<<std::endl;
+    std::cout<<"ÃŒÃ¥Ã²Ã®Ã¤ ÃÃ¼Ã¾Ã²Ã®Ã­Ã : ÃªÃ®Ã°Ã¥Ã­Ã¼ Ã°Ã Ã¢Ã¥Ã­ "<<std::setprecision(10)<<newton(0,1)<<std::endl;
+    std::cout<<"ÃŒÃ¥Ã²Ã®Ã¤ Ã¨Ã²Ã¥Ã°Ã Ã¶Ã¨Ã©: ÃªÃ®Ã°Ã¥Ã­Ã¼ Ã°Ã Ã¢Ã¥Ã­ "<<std::setprecision(10)<<iterations(0,1)<<std::endl;
     return 0;
 }
