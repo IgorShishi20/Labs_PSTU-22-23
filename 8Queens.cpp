@@ -4,20 +4,20 @@ int board[8][8];
 
 bool isPossible(int n, int row, int col){
     //check vertical
-    for(int i=row-1;i>=0;i--){
-        if(board[i][col]==1){
+    for(int i=row;i>=1;i--){
+        if(board[i-1][col]==1){
             return false;
         }
     }
     //check secondary diagonal
-    for(int i=row-1,j=col-1;i >= 0 && j >= 0;i--,j--){
-        if(board[i][j] == 1){
+    for(int i=row,j=col;i >= 1 && j >= 1;i--,j--){
+        if(board[i-1][j-1] == 1){
             return false;
         }
     }
     //check main diagonal
-    for(int i=row-1,j=col+1;i >= 0 && j<n;i--,j++){
-        if(board[i][j] == 1){
+    for(int i=row,j=col+1;i >= 1 && j<n;i--,j++){
+        if(board[i-1][j] == 1){
             return false;
         }
     }
@@ -25,9 +25,9 @@ bool isPossible(int n, int row, int col){
 }
 void nQueenHelper(int n, int row){
     if (row==n){
-        for(int i=0;i<n;i++){
-            for(int j=0; j<n; j++){
-                if(board[i][j]==1){
+        for(int i=1;i<=n;i++){
+            for(int j=1; j<=n; j++){
+                if(board[i-1][j-1]==1){
                     cout<<"Q"<<" ";
                 }
                 else{
@@ -39,12 +39,12 @@ void nQueenHelper(int n, int row){
         cout << endl;
         return;
     }
-    for(int j = 0; j < n; j++){
-        if(isPossible(n, row,j)){
-            board[row][j] = 1;
+    for(int j = 1; j <= n; j++){
+        if(isPossible(n, row,j-1)){
+            board[row][j-1] = 1;
             nQueenHelper(n,row + 1);
         }
-        board[row][j] = 0;
+        board[row][j-1] = 0;
     }
     return;
 }
