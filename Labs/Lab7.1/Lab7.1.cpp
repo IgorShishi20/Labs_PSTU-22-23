@@ -13,13 +13,13 @@ complex<double> substraction(complex<double> a, complex<double> b){
 }
 
 int main(){
-    cout<<"Ââåäèòå äâà äåéñòâèòåëüíûõ ÷èñëà"<<endl;
+    cout<<"Введите два действительных числа"<<endl;
     double a,b;
     cin>>a>>b;
     complex<double>c,d;
-    cout<<"Ââåäèòå äâà êîìïëåêñíûõ ÷èñëà â ôîðìàòå (Ra,Ia) (Rb,Ib) áåç ïðîáåëîâ â ñêîáêàõ"<<endl;
+    cout<<"Введите два комплексных числа в формате (Ra,Ia) (Rb,Ib) без пробелов в скобках"<<endl;
     cin>>c>>d;
-    cout<<"Ðàçíîñòü äåéñòâèòåëüíûõ ÷èñåë ðàâíà "<<substraction(a,b)<<endl;
-    cout<<"Ðàçíîñòü êîìïëåêñíûõ ÷èñåë ðàâíà "<<substraction(c,d)<<endl;
+    cout<<"Разность действительных чисел равна "<<substraction(a,b)<<endl;
+    cout<<"Разность комплексных чисел равна "<<substraction(c,d)<<endl;
     return 0;
 }
