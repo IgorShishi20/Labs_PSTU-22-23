@@ -3,7 +3,7 @@ using namespace std;
 
 int minimum (int k,...)
 {
-    int *p = &k; // óêàçàòåëü íà ïàðàìåòð k
+    int *p = &k; // указатель на параметр k
     int min=INT32_MAX;
     for (;k!=0;k--){
         p+=2;
