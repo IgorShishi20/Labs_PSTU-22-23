@@ -26,7 +26,7 @@ void Find_Saddle(int mass[10][10]){
             if(mass[i][j] > max_row[i]){
                 max_row[i]=mass[i][j];
             }
-            if(mass[i][j] < min_row[i]){
+            if(mass[i][j] > max_col[i]){
                 max_col[j]=mass[i][j];
             }
         }
