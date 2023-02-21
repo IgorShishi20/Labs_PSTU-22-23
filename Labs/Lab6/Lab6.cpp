@@ -43,10 +43,6 @@ int main( )
 {
     char* str=new char[255];
     Gets(str);
-    for(int i=0;i<strlen(str);i++){
-        cout<<str[i];
-    }
-    cout<<endl;
     str = Letters_then_digits(str);
     for(int i=0;i<strlen(str);i++){
         cout<<str[i];
