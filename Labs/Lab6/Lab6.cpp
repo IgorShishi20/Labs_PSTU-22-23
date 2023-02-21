@@ -3,7 +3,6 @@
 using namespace std;
 
 void Gets(char* str){
-    char ch;
     cin.getline(str,255);
 }
 
