@@ -48,7 +48,7 @@ struct Student{
     char middle_name[Name_max];
     //we assume that we use phone numbers in countries with 11-digits format (country + area + code)
     char phone_number[phone_max];
-    //each class of students has น and letter
+    //each class of students has ยน and letter
     int class_number;
     char class_letter;
     //we keep four student marks
