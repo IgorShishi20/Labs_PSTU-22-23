@@ -52,5 +52,6 @@ int main( )
     PrintArr(arr,N);
     quick_sort(arr,0,9);
     PrintArr(arr,N);
+    delete[] arr;
     return 0;
 }
