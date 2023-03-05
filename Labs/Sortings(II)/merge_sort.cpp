@@ -78,5 +78,6 @@ int main( )
     PrintArr(arr,N);
     merge_sort(arr,0,9);
     PrintArr(arr,N);
+    delete[] arr;
     return 0;
 }
