@@ -105,4 +105,5 @@ int main(){
     cout<<find_elem(list,52)<<endl;
     //delete list
     delete_List(list);
+    return 0;
 }
