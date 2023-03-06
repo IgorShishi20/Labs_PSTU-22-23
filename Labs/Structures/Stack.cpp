@@ -166,4 +166,5 @@ int main(){
     cout<<find_elem(test_stack,52)<<endl;
     //delete stack
     delete_stack(test_stack);
+    return 0;
 }
