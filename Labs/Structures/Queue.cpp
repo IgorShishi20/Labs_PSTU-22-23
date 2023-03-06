@@ -22,7 +22,7 @@ struct Queue{
         size = 0;
     }
 
-    //push element - use data and show for new element next is stack.top and stack now starts from curr
+    //push element - use data and show for new element prev is queue.back and queue now ends with curr
     void push(int data){
         auto *curr = new QueueElem;
         curr->data = data;
@@ -38,12 +38,12 @@ struct Queue{
         size++;
     }
 
-    //isEmpty returns true if stack has 0 elements, false otherwise
+    //isEmpty returns true if queue has 0 elements, false otherwise
     bool isEmpty(){
         return front == nullptr;
     }
 
-    //pop element - remove element from stack, so it give us value from top and top now is next element
+    //pop element - remove element from queue, so it give us value from front and front now is next element
     int pop(){
         int value = front->data;
         QueueElem* tmp = front;
@@ -58,7 +58,7 @@ struct Queue{
 
 };
 
-//create stack of size n and
+//create queue of size n
 Queue create_queue(int n)
 {
     Queue queue{};
@@ -165,9 +165,9 @@ void delete_queue(Queue &queue) {
 }
 
 int main(){
-    //create stack of n elements (user input)
+    //create queue of n elements (user input)
     Queue test_stack = create_queue(10);
-    //print stack elements from top to bottom (unfortunately no out of bounds checking - pain for user)
+    //print queue elements from front to back (unfortunately no out of bounds checking - pain for user)
     print_queue(test_stack);
     //add 1 element on position pos
     add_elem(test_stack,5);
@@ -180,6 +180,6 @@ int main(){
     print_queue(test_stack);
     //print position of element if found, -1 otherwise
     cout<<find_elem(test_stack,52)<<endl;
-    //delete stack
+    //delete queue
     delete_queue(test_stack);
 }
