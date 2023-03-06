@@ -182,4 +182,5 @@ int main(){
     cout<<find_elem(test_stack,52)<<endl;
     //delete queue
     delete_queue(test_stack);
+    return 0;
 }
