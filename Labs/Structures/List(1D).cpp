@@ -26,7 +26,7 @@ ListElem* createList(int n)
     return start;
 }
 
-void add_elem(ListElem* start,int pos){
+void add_elem(ListElem* &start,int pos){
     ListElem *first=start;
     for(int i=1;i<pos-1;i++){
         first = first->next;
@@ -43,13 +43,13 @@ void add_elem(ListElem* start,int pos){
     }
 }
 
-void add_elems(ListElem* list,int pos,int k){
+void add_elems(ListElem* &list,int pos,int k){
     for(int i=0;i<k;i++){
         add_elem(list,pos+i);
     }
 }
 
-void delete_elems(ListElem* start,int pos,int k){
+void delete_elems(ListElem* &start,int pos,int k){
     ListElem *first=start;
     ListElem *last;
     for(int i=0;i<pos-1;i++){
