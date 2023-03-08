@@ -56,10 +56,15 @@ void delete_elems(ListElem* &start,int pos,int k){
         first = first->next;
     }
     last = first;
-    for(int i=0;i<k+1;i++){
+    for(int i=0;i<k;i++){
         last = last->next;
     }
-    first->next = last;
+    if (pos==1){
+        start = last;
+    }
+    else{
+        first->next = last->next;
+    }
 }
 
 int find_elem(ListElem* start,int value){
