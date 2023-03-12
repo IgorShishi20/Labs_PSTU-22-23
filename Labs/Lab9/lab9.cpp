@@ -38,6 +38,6 @@ int find_letters(){
 
 int main(){
     rewrite_string(5,8);
-    find_letters();
+    cout<<"Number of consonants in F2 is "<<find_letters();
     return 0;
 };
