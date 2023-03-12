@@ -76,7 +76,7 @@ int main( )
     int* arr = new int[N];
     FillArr(arr,N,0,1000);
     PrintArr(arr,N);
-    merge_sort(arr,0,9);
+    merge_sort(arr,0,N-1);
     PrintArr(arr,N);
     delete[] arr;
     return 0;
