@@ -51,14 +51,14 @@ int main(){
     Matrix test_matrix{};
     int j=1;
     fill_matrix(base_size,-1000,1000,test_matrix);
-    cout<<"Ñãåíåðèðîâàííûé ìàññèâ"<<endl;
+    cout<<"Сгенерированный массив"<<endl;
     print_matrix(test_matrix,test_matrix.rows,test_matrix.cols);
     cout<<endl;
     cout<<endl;
-    cout<<"Êàêóþ ñòðîêó óäàëÿåì?"<<endl;
+    cout<<"Какую строку удаляем?"<<endl;
     cin>>j;
     delete_string(test_matrix,base_size,j);
-    cout<<"Ìàññèâ áåç "<<j<<" ñòðîêè"<<endl;
+    cout<<"Массив без "<<j<<" строки"<<endl;
     print_matrix(test_matrix,test_matrix.rows,test_matrix.cols);
     for(int i = 0;i<6;i++){
         delete []test_matrix.data[i];
