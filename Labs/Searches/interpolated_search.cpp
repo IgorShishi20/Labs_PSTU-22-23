@@ -58,7 +58,7 @@ int interpolated_search(int arr[],int N,int find){
 
 int main(){
     int N;
-    cout<<"Ââåäèòå ğàçìåğ ìàññèâà"<<endl;
+    cout<<"Ã‚Ã¢Ã¥Ã¤Ã¨Ã²Ã¥ Ã°Ã Ã§Ã¬Ã¥Ã° Ã¬Ã Ã±Ã±Ã¨Ã¢Ã "<<endl;
     cin>>N;
     int* arr = new int[N];
     FillArr(arr,N,0,1000);
