@@ -27,7 +27,7 @@ int linear_search(int arr[],int N,int find){
 
 int main(){
     int N;
-    cout<<"Ââåäèòå ğàçìåğ ìàññèâà"<<endl;
+    cout<<"Ğ’Ğ²ĞµĞ´Ğ¸Ñ‚Ğµ Ñ€Ğ°Ğ·Ğ¼ĞµÑ€ Ğ¼Ğ°ÑÑĞ¸Ğ²Ğ°"<<endl;
     cin>>N;
     int* arr = new int[N];
     FillArr(arr,N,0,1000);
