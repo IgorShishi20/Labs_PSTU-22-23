@@ -6,7 +6,7 @@ using namespace std;
 int main() {
     string name, group;
     float gpa;
-    cout << "Ââåäèòå äàííûå ñòóäåíòà" << endl;
+    cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð´Ð°Ð½Ð½Ñ‹Ðµ ÑÑ‚ÑƒÐ´ÐµÐ½Ñ‚Ð°" << endl;
     cin >> name;
     cin >> group;
     cin >> gpa;
